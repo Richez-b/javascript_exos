@@ -64,10 +64,14 @@ let allParagraph = document.querySelectorAll('p');
 let array = Array.from(allParagraph);
 
 
-array.forEach((items)=> {
+array.forEach((items,index)=> {
     items.innerText = 'LOL',
-    items.classList.add('red'),    
+    // items.classList.add('red'),
+    items.style.color = 'red';
+    items.style.cursor = 'pointer';
+    items.style.border = '1px solid black';
+    console.log('Système index p : ',index);
     items.addEventListener('click',function(){
-        console.log(items);
+        console.log(index);
     });
 });
