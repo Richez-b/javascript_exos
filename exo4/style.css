@@ -1,0 +1,9 @@
+#vanta {
+    width: auto; /* Largeur de la div */
+    height: 500px; /* Hauteur de la div */
+    margin: auto; /* Centre la div horizontalement */
+    display: flex; /* Utilise flexbox pour centrer le contenu */
+    justify-content: center; /* Centre le contenu horizontalement */
+    align-items: center; /* Centre le contenu verticalement */
+    background-color: lightgray; /* Couleur de fond pour visualiser la div */
+  }
