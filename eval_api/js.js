@@ -20,11 +20,11 @@ async function randomUser(){
                         data.results[0].location.city + '\n'+
                         `(${data.results[0].location.state}-${data.results[0].location.country})`+  '\n' + data.results[0].cell
         let a = user.querySelector('a');
-        a.addEventListener('click',()=>{
-            randomUser()
+        a.addEventListener('click',()=> {
+            randomUser();  
         },{once:true})
-    } catch (error){
-        console.error('Pas de donées ! ');
-    }
-}
+                    } catch (error){
+                        console.error('Pas de donées ! ');
+                    }
+                }
 randomUser()
