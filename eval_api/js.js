@@ -23,8 +23,8 @@ async function randomUser(){
         a.addEventListener('click',()=> {
             randomUser();  
         },{once:true})
-                    } catch (error){
-                        console.error('Pas de donées ! ');
-                    }
-                }
+    } catch (error){
+        console.error('Pas de donées ! ');
+    }
+}
 randomUser()
