@@ -5,6 +5,7 @@ async function randomUser(){
     try {
         const data = await fetch('https://randomuser.me/api').then(res => res.json());
         l(data)
+
         let img = user.querySelector('img')
         img.setAttribute('src', data.results[0].picture.thumbnail);
 
@@ -20,6 +21,7 @@ async function randomUser(){
                         data.results[0].location.city + '\n'+
                         `(${data.results[0].location.state}-${data.results[0].location.country})`+  '\n' + data.results[0].cell
         let a = user.querySelector('a');
+        a.className = 'btn btn-warning'
         a.addEventListener('click',()=> {
             randomUser();  
         },{once:true})
